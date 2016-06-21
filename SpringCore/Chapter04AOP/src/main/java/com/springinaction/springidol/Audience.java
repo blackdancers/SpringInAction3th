@@ -7,7 +7,10 @@ import org.aspectj.lang.ProceedingJoinPoint;
  * Created by dancer on 2016/6/19.
  */
 public class Audience {
-
+    /**
+     * 环绕通知
+     * @param joinPoint
+     */
     public void watchPerformance(ProceedingJoinPoint joinPoint){
         System.out.println("The audience is taking their seats.");
         System.out.println("The audience is turning off their cellphonesWWW.");
