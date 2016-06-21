@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-in-action-3th</artifactId>
+        <groupId>com.spring.in.action</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.spring.in.action.part.one</groupId>
+    <artifactId>Spring-Core</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Chapter01SpringIntoAction</module>
+        <module>Chapter04AOP</module>
+        <module>Chapter02WiringBeans</module>
+        <module>Chapter03ConfigWithSpringBeans</module>
+    </modules>
+
+
+</project>
