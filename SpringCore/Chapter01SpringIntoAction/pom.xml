@@ -11,6 +11,6 @@
 
     <groupId>com.spring.in.action.part.one</groupId>
     <artifactId>chapter01-spring-into-action</artifactId>
-
+    <name>Chapter01SpringIntoAction</name>
 
 </project>

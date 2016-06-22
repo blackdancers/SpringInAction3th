@@ -11,6 +11,6 @@
 
     <groupId>com.spring.in.action.part.one</groupId>
     <artifactId>chapter02-wiring-beans</artifactId>
-
+    <name>Chapter02WiringBeans</name>
 
 </project>
