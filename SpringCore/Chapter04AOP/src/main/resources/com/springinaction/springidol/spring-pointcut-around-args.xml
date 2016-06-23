@@ -6,6 +6,8 @@
 
     <bean class="com.springinaction.springidol.Magician" id="magician"/>
     <bean class="com.springinaction.springidol.Volunteer" id="volunteer"/>
+    <bean class="com.springinaction.springidol.GraciousContestant" id="contestantDelegate"/>
+
     <aop:config>
         <aop:aspect ref="magician">
             <aop:pointcut id="thinking"
@@ -14,6 +16,14 @@
             <aop:before pointcut-ref="thinking"
                         method="interceptThoughts"
                         arg-names="thoughts" />
+            <!-- 引入-->
+<aop:declare-parents types-matching="com.springinaction.springidol.Performer+"
+                     implement-interface="com.springinaction.springidol.Contestant"
+                     default-impl="com.springinaction.springidol.GraciousContestant"/>
+            <!-- -->
+<aop:declare-parents types-matching="com.springinaction.springidol.Performer+"
+                     implement-interface="com.springinaction.springidol.Contestant"
+                     delegate-ref="contestantDelegate"/>
         </aop:aspect>
     </aop:config>
 </beans>
